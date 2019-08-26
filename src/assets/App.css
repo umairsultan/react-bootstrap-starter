@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+.logo-img {
+  width: 50px;
+}
+
+.card-img-top {
+  /* height: 200px; */
+}
