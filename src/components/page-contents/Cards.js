@@ -1,13 +1,16 @@
 import React from 'react';
+import card1 from '../../assets/images/cards/1.jpg';
+import card2 from '../../assets/images/cards/2.jpg';
+import card3 from '../../assets/images/cards/3.jpg';
 
-class Cards extends React.Component {
+export default class Cards extends React.Component {
     render() {
         return (
             <div>
                 <div className="row">
                     <div className="col-md-4 mb-5">
                         <div className="card h-100">
-                            <img className="card-img-top" src="http://lorempixel.com/400/200/" alt="" />
+                            <img className="card-img-top" src={card1} alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Card title</h4>
                                 <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
@@ -19,7 +22,7 @@ class Cards extends React.Component {
                     </div>
                     <div className="col-md-4 mb-5">
                         <div className="card h-100">
-                            <img className="card-img-top" src="http://lorempixel.com/400/200/" alt="" />
+                            <img className="card-img-top" src={card2} alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Card title</h4>
                                 <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
@@ -31,7 +34,7 @@ class Cards extends React.Component {
                     </div>
                     <div className="col-md-4 mb-5">
                         <div className="card h-100">
-                            <img className="card-img-top" src="http://lorempixel.com/400/200/" alt="" />
+                            <img className="card-img-top" src={card3} alt="" />
                             <div className="card-body">
                                 <h4 className="card-title">Card title</h4>
                                 <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -46,5 +49,3 @@ class Cards extends React.Component {
         );
     }
 }
-
-export default Cards;

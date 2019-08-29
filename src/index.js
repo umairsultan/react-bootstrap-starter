@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/bootstrap/bootstrap.min.css';
-import './assets/index.css';
+import './assets/css/bootstrap.min.css';
+import './assets/css/index.css';
+import $ from "jquery";
+import bootstrap from "bootstrap";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

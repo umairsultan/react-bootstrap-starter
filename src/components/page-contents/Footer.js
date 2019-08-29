@@ -1,17 +1,18 @@
 import React from 'react';
 
-class Footer extends React.Component {
+const year = new Date().getFullYear();
+
+export default class Footer extends React.Component {
+
     render() {
         return (
             <div>
                 <footer className="py-5 bg-dark">
                     <div className="container">
-                        <p className="m-0 text-center text-white">Copyright &copy; 2019 - React Bootstrap Business Starter Template</p>
+                        <p className="m-0 text-center text-white">Copyright &copy; {year} - React Bootstrap Business Starter Template</p>
                     </div>
                 </footer>
             </div>
         );
     }
 }
-
-export default Footer;

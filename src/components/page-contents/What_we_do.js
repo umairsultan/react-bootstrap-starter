@@ -1,6 +1,6 @@
 import React from 'react';
 
-class What_we_do extends React.Component {
+export default class What_we_do extends React.Component {
     render() {
         return (
             <div>
@@ -10,7 +10,7 @@ class What_we_do extends React.Component {
                         <hr />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-                        <a className="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+                        <a className="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#exampleModal">Contact Us &raquo;</a>
                     </div>
                     <div className="col-md-4 mb-5">
                         <h2>Contact Us</h2>
@@ -22,10 +22,10 @@ class What_we_do extends React.Component {
                             <br />
                         </address>
                         <address>
-                            <abbr title="Phone">P:</abbr>
+                            <abbr title="Phone">Phone:</abbr> &nbsp;
                             (123) 456-7890
                             <br />
-                            <abbr title="Email">E:</abbr>
+                            <abbr title="Email">Email:</abbr> &nbsp;
                             <a href="mailto:#">name@example.com</a>
                         </address>
                     </div>
@@ -34,5 +34,3 @@ class What_we_do extends React.Component {
         );
     }
 }
-
-export default What_we_do;
