@@ -1,15 +1,12 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
 
-const navLinks = [
+const navLinksData = [
         { linkName: 'Home', linkUrl: '#home' },
         { linkName: 'About', linkUrl: '#about' },
         { linkName: 'Services', linkUrl: '#services' },
         { linkName: 'Contact', linkUrl: '#contact' }
 ]
-
-console.log(navLinks);
-
 
 export default class Nav extends React.Component {
     render() {
@@ -26,25 +23,42 @@ export default class Nav extends React.Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav ml-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href={navLinks[0].linkUrl}>{navLinks[0].linkName}
+                                {
+                                    navLinksData.map(function(link){
+                                        return <Navlinks key={link.linkName} linkData={link} />
+                                    })
+                                }
+                                {/* <li className="nav-item active">
+                                    <a className="nav-link" href="#">Link
                                         <span className="sr-only">(current)</span>
                                     </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href={navLinks[1].linkUrl}>{navLinks[1].linkName}</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href={navLinks[2].linkUrl}>{navLinks[2].linkName}</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href={navLinks[3].linkUrl} data-toggle="modal" data-target="#exampleModal">{navLinks[3].linkName}</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         );
+    }
+}
+
+class Navlinks extends React.Component {
+    
+    render(){
+        
+        // let classes = null;
+        // if (this.props.linkData.linkName === 'Home') {
+        //     classes = 'nav-link active';
+        // } else {
+        //     classes = 'nav-link';
+        // }
+
+        let classes = (this.props.linkData.linkName === 'Home' ? 'nav-link active' : 'nav-link');
+        
+        return (
+            <li className="nav-item">
+                <a className={classes} href={this.props.linkData.linkUrl}>{this.props.linkData.linkName}</a>
+            </li>
+        )
     }
 }
