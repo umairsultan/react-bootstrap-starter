@@ -1,7 +1,7 @@
 import React from 'react';
 import './assets/css/App.css';
 import Header from './components/Header';
-import What_we_do from './components/page-contents/What_we_do';
+import WhatWeDo from './components/page-contents/WhatWeDo';
 import Cards from './components/page-contents/Cards';
 import Footer from './components/page-contents/Footer';
 import Modals from './components/page-contents/Modals';
@@ -12,7 +12,7 @@ export default class App extends React.Component {
       <div className="App">
         <Header AppTitle="React Bootstrap" />
         <div className="container">
-          <What_we_do />
+          <WhatWeDo />
           <Cards />
         </div>
         <Footer />

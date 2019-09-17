@@ -14,7 +14,7 @@ export default class Nav extends React.Component {
             <div className="Nav">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                     <div className="container">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand" href="/#">
                             <img className="logo-img" src={logo} alt="Logo" />
                             {this.props.AppTitle}
                         </a>
@@ -45,13 +45,6 @@ export default class Nav extends React.Component {
 class Navlinks extends React.Component {
     
     render(){
-        
-        // let classes = null;
-        // if (this.props.linkData.linkName === 'Home') {
-        //     classes = 'nav-link active';
-        // } else {
-        //     classes = 'nav-link';
-        // }
 
         let classes = (this.props.linkData.linkName === 'Home' ? 'nav-link active' : 'nav-link');
         

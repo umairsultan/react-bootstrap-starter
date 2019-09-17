@@ -54,7 +54,7 @@ class Card extends React.Component {
                         <p className="card-text">{this.props.cardData.cardText}</p>
                     </div>
                     <div className="card-footer">
-                        <a href="#" className="btn btn-primary">Find Out More!</a>
+                        <a href="/#" className="btn btn-primary">Find Out More!</a>
                     </div>
                 </div>
             </div>

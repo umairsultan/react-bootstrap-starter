@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class What_we_do extends React.Component {
+export default class WhatWeDo extends React.Component {
     render() {
         return (
             <div>
@@ -10,7 +10,7 @@ export default class What_we_do extends React.Component {
                         <hr />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-                        <a className="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#exampleModal">Contact Us &raquo;</a>
+                        <a className="btn btn-primary btn-lg" href="/#" data-toggle="modal" data-target="#exampleModal">Contact Us &raquo;</a>
                     </div>
                     <div className="col-md-4 mb-5">
                         <h2>Contact Us</h2>
