@@ -4,11 +4,11 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/index.css';
 import "jquery";
 import "bootstrap";
-import App from './App';
+import CustomRoutes from './Routes';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-    <App />,
+    <CustomRoutes AppTitle="React Bootstrap" />,
     document.getElementById('root')
 );
 

@@ -1,12 +1,9 @@
 import React from 'react';
-import Nav from './Nav';
 
 export default class Header extends React.Component {
     render() {
         return (
             <div>
-                <Nav AppTitle={this.props.AppTitle} />
-
                 <header className="bg-primary py-5 mb-5">
                     <div className="container h-100">
                         <div className="row h-100 align-items-center">

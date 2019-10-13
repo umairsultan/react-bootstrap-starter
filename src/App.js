@@ -1,5 +1,6 @@
 import React from 'react';
 import './assets/css/App.css';
+import Nav from './components/Nav';
 import Header from './components/Header';
 import WhatWeDo from './components/page-contents/WhatWeDo';
 import Cards from './components/page-contents/Cards';
@@ -10,7 +11,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header AppTitle="React Bootstrap" />
+        <Nav />
+        <Header />
         <div className="container">
           <WhatWeDo />
           <Cards />
