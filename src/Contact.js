@@ -1,21 +1,19 @@
 import React from 'react';
 import './assets/css/App.css';
 import Nav from './components/Nav';
-import HeroUnit from './components/HeroUnit';
-import WhatWeDo from './components/page-contents/WhatWeDo';
-import Cards from './components/page-contents/Cards';
+import Header from './components/Header';
+import ContactPage from './components/page-contents/ContactPage';
 import Footer from './components/page-contents/Footer';
 import Modals from './components/page-contents/Modals';
 
-export default class App extends React.Component {
+export default class Contact extends React.Component {
     render() {
         return (
             <div className="App">
                 <Nav />
-                <HeroUnit />
+                <Header pageTitle="Contact Us" />
                 <div className="container">
-                    <WhatWeDo />
-                    <Cards />
+                    <ContactPage />
                 </div>
                 <Footer />
                 <Modals />

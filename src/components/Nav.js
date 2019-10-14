@@ -1,13 +1,12 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navLinksData = [
         { linkName: 'Home', linkUrl: '/' },
-        { linkName: 'About', linkUrl: '/about' }
-        // ,
-        // { linkName: 'Services', linkUrl: '/services' },
-        // { linkName: 'Contact', linkUrl: '/contact' }
+        { linkName: 'About', linkUrl: '/about' },
+        { linkName: 'Services', linkUrl: '/services' },
+        { linkName: 'Contact', linkUrl: '/contact' }
 ]
 
 export default class Nav extends React.Component {
@@ -18,7 +17,6 @@ export default class Nav extends React.Component {
                     <div className="container">
                         <a className="navbar-brand" href="/#">
                             <img className="logo-img" src={logo} alt="Logo" />
-                            {/* {this.props.AppTitle} */}
                             React Bootstrap
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +29,6 @@ export default class Nav extends React.Component {
                                         return <Navlinks key={link.linkName} linkData={link} />
                                     })
                                 }
-                                {/* <li className="nav-item active">
-                                    <a className="nav-link" href="#">Link
-                                        <span className="sr-only">(current)</span>
-                                    </a>
-                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -47,14 +40,10 @@ export default class Nav extends React.Component {
 
 class Navlinks extends React.Component {
     
-    render(){
-
-        let classes = (this.props.linkData.linkName === 'Home' ? 'nav-link active' : 'nav-link');
-        
+    render(){        
         return (
             <li className="nav-item">
-                {/* <a className={classes} href={this.props.linkData.linkUrl}>{this.props.linkData.linkName}</a> */}
-                <Link className={classes} to={this.props.linkData.linkUrl}>{this.props.linkData.linkName}</Link>
+                <NavLink className="nav-link" to={this.props.linkData.linkUrl} exact activeClassName="active">{this.props.linkData.linkName}</NavLink>
             </li>
         )
     }
